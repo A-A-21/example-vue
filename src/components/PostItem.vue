@@ -6,7 +6,7 @@
         <div><strong>Название:</strong>{{ post.body }}</div>
       </div>
       <div class="post__btns">
-        <button>Удалить</button>
+        <my-button @click="$emit('remove', post)">Удалить</my-button>
       </div>
     </div>
   </div>
